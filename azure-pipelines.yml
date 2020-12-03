@@ -20,15 +20,11 @@ steps:
   inputs:
     arguments: '--force'
 
+
 - task: Npm@0
   displayName: 'npm start'
   inputs:
     command: start
-
-- task: Npm@0
-  displayName: 'Install application dependencies'
-  inputs:
-    arguments: '--force'
 
 - task: ArchiveFiles@1
   displayName: 'Archive files '
