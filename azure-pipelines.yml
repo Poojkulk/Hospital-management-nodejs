@@ -20,12 +20,6 @@ steps:
   inputs:
     arguments: '--force'
 
-
-- task: Npm@0
-  displayName: 'npm start'
-  inputs:
-    command: start
-
 - task: ArchiveFiles@1
   displayName: 'Archive files '
   inputs:
