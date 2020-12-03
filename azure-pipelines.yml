@@ -16,6 +16,16 @@ steps:
     versionSpec: 8.4
 
 - task: Npm@0
+  displayName: 'npm install'
+  inputs:
+    arguments: '--force'
+
+- task: Npm@0
+  displayName: 'npm start'
+  inputs:
+    command: start
+
+- task: Npm@0
   displayName: 'Install application dependencies'
   inputs:
     arguments: '--force'
